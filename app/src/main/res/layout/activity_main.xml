@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:weightSum="1"
+        android:layout_weight="0.95">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="bottom"/>
+
+        <SurfaceView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:id="@+id/surfaceView"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:textSize="60px"
+            android:id="@+id/infoBack"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="0.05"
+        android:weightSum="1">
+        <Button
+            android:id="@+id/camera"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="启动"
+            android:layout_weight="0.5">
+        </Button>
+        <Button
+            android:id="@+id/camera_stop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="停止"
+            android:layout_weight="0.5">
+        </Button>
+    </LinearLayout>
+
+
+</LinearLayout>
